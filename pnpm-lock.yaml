@@ -25,8 +25,8 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0
       '@altv-mango/client':
-        specifier: ^1.2.21
-        version: 1.2.21
+        specifier: ^1.2.23
+        version: 1.2.23(@altv-mango/core@1.2.23)
       '@swc/cli':
         specifier: ^0.3.10
         version: 0.3.10(@swc/core@1.4.6)
@@ -46,8 +46,8 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0
       '@altv-mango/server':
-        specifier: ^1.2.21
-        version: 1.2.21
+        specifier: ^1.2.23
+        version: 1.2.23(@altv-mango/core@1.2.23)
       '@altv/server':
         specifier: ^0.0.37
         version: 0.0.37
@@ -86,8 +86,8 @@ importers:
   resources/core/ui:
     devDependencies:
       '@altv-mango/webview':
-        specifier: ^1.2.21
-        version: 1.2.21
+        specifier: ^1.2.23
+        version: 1.2.23(@altv-mango/core@1.2.23)
       '@iconify/svelte':
         specifier: ^3.1.6
         version: 3.1.6(svelte@4.2.12)
@@ -121,11 +121,13 @@ packages:
   /@abraham/reflection@0.12.0:
     resolution: {integrity: sha512-OoLlgBE5u18mc61pJNamEh2OtFpHjtvDi1pV4ojnnH77juCvQw/Z3YlHF8TJiorU7/V6UuGApFzsi+bieug7fg==}
 
-  /@altv-mango/client@1.2.21:
-    resolution: {integrity: sha512-s7J10V7wsVywQOg4YCfiaR/U0ZuuHb4tIitUqW0bMK2r/r5vJpdxaBk/NmOxgEkcfmp6PLLm4z89OsaMb2rAqA==}
+  /@altv-mango/client@1.2.23(@altv-mango/core@1.2.23):
+    resolution: {integrity: sha512-srpHLlNT9GW0HPg84J+zv1V7/AGVtxnej0RKILQSl3kcs2mloQXxxDehLKum/wXQMBpAuuBs8y8fQqnXSX1V9g==}
+    peerDependencies:
+      '@altv-mango/core': ^1.2.22
     dependencies:
       '@abraham/reflection': 0.12.0
-      '@altv-mango/core': 1.2.21
+      '@altv-mango/core': 1.2.23
       '@altv/client': 0.0.30
       '@altv/natives': 0.0.8
       '@altv/shared': 0.0.14
@@ -133,8 +135,8 @@ packages:
       zod: 3.22.4
     dev: true
 
-  /@altv-mango/core@1.2.21:
-    resolution: {integrity: sha512-6m0/xdjuSww27z6kFGStBa5AflIMJ4Q/KG77UvvV3o5oiR5HPPR5Tmb+2ua/VqS0ShHi8NrV4rVmMvDHi2XmdA==}
+  /@altv-mango/core@1.2.23:
+    resolution: {integrity: sha512-hE6UU3SP+yTqzGM8OAiG5rF8iS9vMrR94DGRrcDy433XgpSSYoXs12buSqAj8gWbuSXpAnRTAtwa6C4ZEtHiNw==}
     dependencies:
       '@abraham/reflection': 0.12.0
       '@altv/client': 0.0.30
@@ -143,23 +145,27 @@ packages:
       inversify: 6.0.2
       zod: 3.22.4
 
-  /@altv-mango/server@1.2.21:
-    resolution: {integrity: sha512-sHobJPTfMXz0Q2x7zYY8pqzykpEF/HvEw7zrkVGmzD/TSqWFkWYfk5+2lKlRRSK+wudXgU+00Mpm5V0+b9+iSg==}
+  /@altv-mango/server@1.2.23(@altv-mango/core@1.2.23):
+    resolution: {integrity: sha512-5bNGaxjTJCqHxKcfaTm7BwQo39GV7I0CIWYzW+sMYeatUCCFKFpY0UBgPzIdUhtn4cEn6LWu8E9Hi4xdMEQ7fw==}
+    peerDependencies:
+      '@altv-mango/core': ^1.2.22
     dependencies:
       '@abraham/reflection': 0.12.0
-      '@altv-mango/core': 1.2.21
+      '@altv-mango/core': 1.2.23
       '@altv/server': 0.0.37
       '@altv/shared': 0.0.14
       inversify: 6.0.2
       zod: 3.22.4
     dev: false
 
-  /@altv-mango/webview@1.2.21:
-    resolution: {integrity: sha512-GKuprN5DQxaFSNQSE0gvLSd2tMlx45MwOo1WALsP4D3LnGJ6qX9Ov+yf08xRmWJMQTr8Cz8dUDntzHaSW6TjeA==}
+  /@altv-mango/webview@1.2.23(@altv-mango/core@1.2.23):
+    resolution: {integrity: sha512-TF42lUYdcnaUhejfyY5YSwDybdTqyxkV12fZhCN5oSssMjiKVRuIyCrO0a5deHpgiBhg8hCl3K95S0KpRiDcvg==}
+    peerDependencies:
+      '@altv-mango/core': ^1.2.22
     dependencies:
-      '@altv-mango/core': 1.2.21
+      '@altv-mango/core': 1.2.23
       '@altv/shared': 0.0.14
-      '@altv/types-webview': 16.2.1
+      '@altv/webview': 0.0.6(@altv/shared@0.0.14)
     dev: true
 
   /@altv/client@0.0.30:
@@ -175,8 +181,12 @@ packages:
   /@altv/shared@0.0.14:
     resolution: {integrity: sha512-QIhXNYTP3yKX1BZ9uhmonmQxl6Zmvh5W5EKjou9+VCZu+OY12Fkz1usQbwkN2LurVDHaID/60DAXJuccqv2/sA==}
 
-  /@altv/types-webview@16.2.1:
-    resolution: {integrity: sha512-JEk1+XR1ya+mYkKoF3/tLYfaHUKkL6A8gtckuuGuf4IPrKO80UVGYI+2LxvqMBKcF6aDGI3MOoD9DYV0DznWSQ==}
+  /@altv/webview@0.0.6(@altv/shared@0.0.14):
+    resolution: {integrity: sha512-++fPDOCmssrcW7oMiKFAjX/Of5oyyihS6INvPAXSEZytj6x37hoxUgn+wz+IkN6wu462dAlwGwiR0lRL9vWBmg==}
+    peerDependencies:
+      '@altv/shared': ~0.0.1
+    dependencies:
+      '@altv/shared': 0.0.14
     dev: true
 
   /@ampproject/remapping@2.2.1:
