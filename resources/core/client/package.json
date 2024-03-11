@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "@abraham/reflection": "^0.12.0",
-        "@altv-mango/client": "^1.2.23",
+        "@altv-mango/client": "^1.2.26",
         "@swc/cli": "^0.3.10",
         "@swc/core": "^1.4.6",
         "tsup": "^8.0.2",
